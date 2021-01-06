@@ -4,6 +4,8 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if cart_subtotal_cents > 0 %>
+  
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +50,11 @@
       <% end %>
     </div>
   </div>
+
+  <% else %>
+  <div class="alert alert-warning" role="alert">
+  Your cart appears to be empty. Please add one or more items to checkout.
+</div>
+  <% end %>
 
 </section>
