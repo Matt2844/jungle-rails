@@ -1,3 +1,5 @@
+require 'money'
+
 class Admin::ProductsController < ApplicationController
 
   def index
