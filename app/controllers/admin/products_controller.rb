@@ -2,6 +2,8 @@ require 'money'
 
 class Admin::ProductsController < ApplicationController
 
+  http_basic_authenticate_with name: ENV["HTTP_ADMIN_USER"], password: ENV["HTTP_ADMIN_PASSWORD"]
+
   def index
     @products = Product.order(id: :desc).all
   end
