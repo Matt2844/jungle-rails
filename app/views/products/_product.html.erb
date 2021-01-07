@@ -17,6 +17,13 @@
     <% end %>
   </footer>
 
+  <aside>
+      <% if product.quantity == 0 %>
+        <div class="if-sold-out">SOLD OUT</div>
+      <% end %> 
+  </aside>    
+
+
   <aside class="price">
     <%= humanized_money_with_symbol product.price %>
   </aside>
