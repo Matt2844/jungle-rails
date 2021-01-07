@@ -27,6 +27,12 @@ main section.categories-show {
         display: block;
       }
 
+      a .product {
+        background-color: blue;
+        width: 1rem; 
+        height: auto;
+      }
+
       footer {
         position: absolute;
         bottom: 0;
