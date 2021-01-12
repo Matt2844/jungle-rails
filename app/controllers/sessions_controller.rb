@@ -21,5 +21,6 @@ end
     session[:user_id] = nil
     redirect_to '/login'
   end
+  
 
 end
